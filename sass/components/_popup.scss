@@ -16,27 +16,6 @@
         background-color: rgba($color-black, .3);
     }
 
-    &:target {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    &:target &__close {
-
-        &:link,
-        &:visited {
-            color: $color-grey-dark;
-            position: absolute;
-            top: 1.5rem;
-            right: 2.5rem;
-            font-size: 3rem;
-            text-decoration: none;
-            display: inline-block;
-            transition: all .2s;
-            line-height: 1;
-        }
-    }
-
     &__content {
         @include absCenter;
 

@@ -19,22 +19,17 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
-    
+
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
         @include respond(phone) {
-            letter-spacing: .2rem;
+            letter-spacing: 0.5rem;
             font-family: 2rem;
         }
-    
-        /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */
     }
-    
+
     &--sub {
         display: block;
         font-size: 2rem;
@@ -43,8 +38,7 @@ body {
         animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
-            font-family: 1rem;
-            letter-spacing: .2rem;
+            letter-spacing: 0.2rem;
         }
     }
 }
@@ -54,23 +48,28 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right,
+            $color-primary-light,
+            $color-primary-dark);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    letter-spacing: .2rem;
-    transition: all .2s;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
 
     @include respond(tab-port) {
-        font-size: 3rem;
+        font-size: 4rem;
+        padding: 4rem;
     }
 
     @include respond(phone) {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        padding: 4rem;
     }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
 }
 

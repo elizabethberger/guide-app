@@ -1,5 +1,5 @@
-.form{
-    &__group:not(:lat-child){
+.form {
+    &__group:not(:lat-child) {
         margin-bottom: 2rem;
     }
 
@@ -28,7 +28,7 @@
             border-bottom: 3px solid $color-secondary-dark;
         }
 
-        &:focus{
+        &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 3px solid $color-primary;
@@ -44,7 +44,7 @@
         transition: all .3s;
     }
 
-    &__input:placeholder-shown + &__label {
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
@@ -59,7 +59,7 @@
             margin-bottom: 2rem;
         }
     }
-    
+
     &__radio-input {
         display: none;
     }
@@ -81,7 +81,7 @@
         left: 0;
         top: -.4rem;
 
-        &::after{
+        &::after {
             content: "";
             display: block;
             height: 1.3rem;
@@ -97,7 +97,7 @@
         }
     }
 
-    &__radio-input:checked ~ &__radio-label &__radio-button:after {
+    &__radio-input:checked~&__radio-label &__radio-button::after {
         opacity: 1;
     }
 }
